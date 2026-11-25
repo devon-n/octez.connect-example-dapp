@@ -25,7 +25,7 @@ $ ionic serve
 
 ## Security
 
-If you discover a security vulnerability within this application, please send an e-mail to hi@airgap.it. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability, please report it privately via [GitHub security advisories](https://github.com/trilitech/octez.connect/security/advisories/new). Please don't open a public issue.
 
 ## Testing multi-network (octez.connect v5)
 
