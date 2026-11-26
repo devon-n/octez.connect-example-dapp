@@ -36,8 +36,6 @@ export class HomePage {
 
   public delegationAddress: string = 'tz1MJx9vhaNRSimcuXPK2rW4fLccQnDAnVKJ'
 
-  public tippingAmount: string = '1'
-
   public rawOperationRequest: string = `[
     {
       "kind": "transaction",
@@ -164,24 +162,6 @@ export class HomePage {
       ]
     })
     toast.present()
-  }
-
-  public async tip(): Promise<void> {
-    const amount: number = parseFloat(this.tippingAmount) * 1000000
-    if (isNaN(amount)) {
-      return this.showAlertWithBlockExplorerLink('Error', 'Amount is invalid')
-    }
-
-    return this.requestOperationWithAlert(
-      [
-        {
-          kind: 'transaction',
-          amount: amount.toString(),
-          destination: 'tz1hrHoK11TBz3HwWD2YZyZVWUyAg44h3eqd'
-        }
-      ],
-      'Thanks for your tip!'
-    )
   }
 
   public async delegate(): Promise<void> {

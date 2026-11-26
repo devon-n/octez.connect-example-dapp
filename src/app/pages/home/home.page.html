@@ -460,27 +460,7 @@
           </ion-card-content>
         </ion-card>
       </ion-col>
-      <ion-col size="12" size-md="6" class="ion-no-padding">
-        <p class="ion-padding-top">
-          <strong>Tipping</strong>
-        </p>
-        <p>
-          Prompts the wallet with a spend operation to a pre-defined addres, in this case an address owned by AirGap.
-        </p>
-      </ion-col>
       <ion-col size="12" size-md="9" class="ion-no-padding">
-        <ion-card class="ion-no-margin">
-          <ion-card-content>
-            <ion-card-subtitle>
-              Tippinng Details
-            </ion-card-subtitle>
-            <ion-item lines="none" class="ion-no-padding ion-padding-bottom">
-              <ion-label position="stacked">Amount in XTZ</ion-label>
-              <ion-input [(ngModel)]="tippingAmount" placeholder="1"></ion-input>
-            </ion-item>
-            <ion-button (click)="tip()">Tip us</ion-button>
-          </ion-card-content>
-        </ion-card>
         <beacon-sample-contract></beacon-sample-contract>
       </ion-col>
     </ion-row>
