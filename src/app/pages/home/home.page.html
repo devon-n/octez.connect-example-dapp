@@ -71,67 +71,6 @@
         </ion-row>
       </ion-col>
     </ion-row>
-    <!--
-    <ion-row class="ion-padding-bottom" id="approach">
-      <ion-col size="12" size-md="6" class="ion-no-padding ion-padding-vertical">
-        <h2>Approach</h2>
-        <p>
-          Beacon supports various wallets ranging from Browser Extensions to mobile, desktop, web and hardware wallets.
-        </p>
-      </ion-col>
-      <ion-col size="12" class="ion-no-padding">
-        <ion-row class="selection--container">
-          <ion-col size="12" size-md="6">
-            <ion-card class="ion-no-margin">
-              <ion-card-header>
-                <img src="assets/img/beacon_extension.svg" />
-                <ion-card-title>Browser Extension</ion-card-title>
-              </ion-card-header>
-              <ion-card-content>
-                <p>The Beacon browser extension is responsible for the communication with the dApp and the wallet.</p>
-              </ion-card-content>
-              <div class="ion-margin">
-                <a href="https://github.com/airgap-it/beacon-extension/releases" target="_blank" rel="noopener">
-                  <ion-button>
-                    Download Extension
-                  </ion-button>
-                </a>
-                <a href="https://youtu.be/Ws_1U6ioG8s" target="_blank" rel="noopener">
-                  <ion-button fill="outline">
-                    Video
-                  </ion-button>
-                </a>
-              </div>
-            </ion-card>
-          </ion-col>
-          <ion-col size="12" size-md="6">
-            <ion-card class="ion-no-margin">
-              <ion-card-header>
-                <img src="assets/img/beacon_dapp.svg" />
-                <ion-card-title>
-                  dApp Integration
-                </ion-card-title>
-              </ion-card-header>
-              <ion-card-content>
-                <p>
-                  With the implementation of the beacon-sdk, the dApp can also support direct connections. The user has
-                  to scan the pairing qr with his wallet for each dApp.
-                </p>
-              </ion-card-content>
-              <div class="ion-margin">
-                <ion-button (click)="askForPermissions()">Connect Beacon</ion-button>
-                <a href="https://youtu.be/-BrRTlgza10" target="_blank" rel="noopener">
-                  <ion-button fill="outline">
-                    Video
-                  </ion-button>
-                </a>
-              </div>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-col>
-    </ion-row>
-    -->
     <ion-row class="ion-padding-bottom integration--container" id="wallets_dapps">
       <ion-col size="12" size-md="6" class="ion-no-padding ion-padding-vertical">
         <h2>Wallets & dApps</h2>
@@ -148,14 +87,6 @@
         <ion-row class="ion-padding-top">
           <ion-col size="12" class="ion-no-padding ion-padding-bottom">
             <strong>Wallets</strong>
-          </ion-col>
-          <ion-col size="12" size-md="4">
-            <beacon-supporting-project-item
-              [logo]="'airgap_logo.svg'"
-              [description]="'<strong>AirGap</strong> makes self custody  simple and secure. Protect your crypto and store your private keys offline. It’s time to set up your safe place for your coins and get rewards.'"
-              [btnLink]="'https://airgap.it/'"
-              [btnDescription]="'Download'"
-            ></beacon-supporting-project-item>
           </ion-col>
           <ion-col size="12" size-md="4">
             <beacon-supporting-project-item
@@ -274,7 +205,7 @@
           <a href="https://gitlab.com/tzip/tzip/tree/master/proposals/tzip-10" target="_blank" rel="noopener">
             tzip-10
           </a>
-          Beacon utilizes a peer to peer network built with the
+          octez.connect utilizes a peer to peer network built with the
           <a href="https://matrix.org/" target="_blank" rel="noopener">matrix protocol</a>
           to transport messages from the dApps to the Wallets thus leveraging a decentralized approach.
         </p>
